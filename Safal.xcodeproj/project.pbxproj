@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1518E2025022F15F45FE47C0 /* Pods_Safal_SafalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7492B19A776D7605BB93EA9E /* Pods_Safal_SafalUITests.framework */; };
 		2EA012BE26B5F42C00E901E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */; };
 		2EA012C026B5F42C00E901E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */; };
 		2EA012C226B5F42C00E901E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012C126B5F42C00E901E9 /* ViewController.swift */; };
@@ -15,6 +16,14 @@
 		2EA012CA26B5F42F00E901E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA012C826B5F42F00E901E9 /* LaunchScreen.storyboard */; };
 		2EA012D526B5F42F00E901E9 /* SafalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012D426B5F42F00E901E9 /* SafalTests.swift */; };
 		2EA012E026B5F42F00E901E9 /* SafalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012DF26B5F42F00E901E9 /* SafalUITests.swift */; };
+		2EA012EF26B6009B00E901E9 /* UIMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012EE26B6009B00E901E9 /* UIMethods.swift */; };
+		2EA012F226B603EA00E901E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012F126B603EA00E901E9 /* BaseViewController.swift */; };
+		2EA012F426B605C600E901E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012F326B605C600E901E9 /* SignUpViewController.swift */; };
+		2EA012F626B60A5000E901E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012F526B60A5000E901E9 /* HomeViewController.swift */; };
+		2EA012F826B60CA900E901E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EA012F726B60CA900E901E9 /* GoogleService-Info.plist */; };
+		2EA012FA26B6146F00E901E9 /* SelectHabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012F926B6146F00E901E9 /* SelectHabitsViewController.swift */; };
+		35AFA1DB59F80E89825B8840 /* Pods_SafalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3266504F3D20AEC6A1313F5 /* Pods_SafalTests.framework */; };
+		77DE75006CC67D6889D044A9 /* Pods_Safal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FA84DC5591BF3C0884CA62 /* Pods_Safal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		196920D31D808121D30E95E4 /* Pods-Safal-SafalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal-SafalUITests.release.xcconfig"; path = "Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		247749902975B64A8C221DEE /* Pods-SafalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafalTests.release.xcconfig"; path = "Target Support Files/Pods-SafalTests/Pods-SafalTests.release.xcconfig"; sourceTree = "<group>"; };
 		2EA012BA26B5F42C00E901E9 /* Safal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,19 @@
 		2EA012DB26B5F42F00E901E9 /* SafalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA012DF26B5F42F00E901E9 /* SafalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafalUITests.swift; sourceTree = "<group>"; };
 		2EA012E126B5F42F00E901E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA012EE26B6009B00E901E9 /* UIMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMethods.swift; sourceTree = "<group>"; };
+		2EA012F126B603EA00E901E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2EA012F326B605C600E901E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2EA012F526B60A5000E901E9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2EA012F726B60CA900E901E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EA012F926B6146F00E901E9 /* SelectHabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHabitsViewController.swift; sourceTree = "<group>"; };
+		62608355550F1865689C5D75 /* Pods-Safal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal.release.xcconfig"; path = "Target Support Files/Pods-Safal/Pods-Safal.release.xcconfig"; sourceTree = "<group>"; };
+		66FC23F9999048A86CA62083 /* Pods-Safal-SafalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal-SafalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7492B19A776D7605BB93EA9E /* Pods_Safal_SafalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safal_SafalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF5B7C93B1A4E47E6D3C4F2 /* Pods-Safal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal.debug.xcconfig"; path = "Target Support Files/Pods-Safal/Pods-Safal.debug.xcconfig"; sourceTree = "<group>"; };
+		C3FA84DC5591BF3C0884CA62 /* Pods_Safal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3266504F3D20AEC6A1313F5 /* Pods_SafalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD39A82D7384F68FCAEB08F9 /* Pods-SafalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafalTests.debug.xcconfig"; path = "Target Support Files/Pods-SafalTests/Pods-SafalTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77DE75006CC67D6889D044A9 /* Pods_Safal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AFA1DB59F80E89825B8840 /* Pods_SafalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1518E2025022F15F45FE47C0 /* Pods_Safal_SafalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +110,8 @@
 				2EA012D326B5F42F00E901E9 /* SafalTests */,
 				2EA012DE26B5F42F00E901E9 /* SafalUITests */,
 				2EA012BB26B5F42C00E901E9 /* Products */,
+				F934558037B01BF66ABB2F82 /* Pods */,
+				FEA822C45C98C97909CD1A91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +128,15 @@
 		2EA012BC26B5F42C00E901E9 /* Safal */ = {
 			isa = PBXGroup;
 			children = (
+				2EA012F026B603CE00E901E9 /* Controllers */,
+				2EA012ED26B6007200E901E9 /* CommonUI */,
 				2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */,
 				2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */,
-				2EA012C126B5F42C00E901E9 /* ViewController.swift */,
 				2EA012C326B5F42C00E901E9 /* Main.storyboard */,
 				2EA012C626B5F42F00E901E9 /* Assets.xcassets */,
 				2EA012C826B5F42F00E901E9 /* LaunchScreen.storyboard */,
 				2EA012CB26B5F42F00E901E9 /* Info.plist */,
+				2EA012F726B60CA900E901E9 /* GoogleService-Info.plist */,
 			);
 			path = Safal;
 			sourceTree = "<group>";
@@ -128,6 +159,49 @@
 			path = SafalUITests;
 			sourceTree = "<group>";
 		};
+		2EA012ED26B6007200E901E9 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				2EA012EE26B6009B00E901E9 /* UIMethods.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		2EA012F026B603CE00E901E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EA012F126B603EA00E901E9 /* BaseViewController.swift */,
+				2EA012C126B5F42C00E901E9 /* ViewController.swift */,
+				2EA012F326B605C600E901E9 /* SignUpViewController.swift */,
+				2EA012F526B60A5000E901E9 /* HomeViewController.swift */,
+				2EA012F926B6146F00E901E9 /* SelectHabitsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F934558037B01BF66ABB2F82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DF5B7C93B1A4E47E6D3C4F2 /* Pods-Safal.debug.xcconfig */,
+				62608355550F1865689C5D75 /* Pods-Safal.release.xcconfig */,
+				66FC23F9999048A86CA62083 /* Pods-Safal-SafalUITests.debug.xcconfig */,
+				196920D31D808121D30E95E4 /* Pods-Safal-SafalUITests.release.xcconfig */,
+				DD39A82D7384F68FCAEB08F9 /* Pods-SafalTests.debug.xcconfig */,
+				247749902975B64A8C221DEE /* Pods-SafalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEA822C45C98C97909CD1A91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3FA84DC5591BF3C0884CA62 /* Pods_Safal.framework */,
+				7492B19A776D7605BB93EA9E /* Pods_Safal_SafalUITests.framework */,
+				D3266504F3D20AEC6A1313F5 /* Pods_SafalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA012E426B5F42F00E901E9 /* Build configuration list for PBXNativeTarget "Safal" */;
 			buildPhases = (
+				54799E6DD21C505F7CD317C2 /* [CP] Check Pods Manifest.lock */,
 				2EA012B626B5F42C00E901E9 /* Sources */,
 				2EA012B726B5F42C00E901E9 /* Frameworks */,
 				2EA012B826B5F42C00E901E9 /* Resources */,
+				6A20F2B1944F8ADF3AE2BC30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA012E726B5F42F00E901E9 /* Build configuration list for PBXNativeTarget "SafalTests" */;
 			buildPhases = (
+				E496CB2DCC810D9F2AAF6533 /* [CP] Check Pods Manifest.lock */,
 				2EA012CC26B5F42F00E901E9 /* Sources */,
 				2EA012CD26B5F42F00E901E9 /* Frameworks */,
 				2EA012CE26B5F42F00E901E9 /* Resources */,
@@ -170,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EA012EA26B5F42F00E901E9 /* Build configuration list for PBXNativeTarget "SafalUITests" */;
 			buildPhases = (
+				37B2E6EBFD4C47F63E4D326A /* [CP] Check Pods Manifest.lock */,
 				2EA012D726B5F42F00E901E9 /* Sources */,
 				2EA012D826B5F42F00E901E9 /* Frameworks */,
 				2EA012D926B5F42F00E901E9 /* Resources */,
+				73E1614A0FD0676759FAFAE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +312,7 @@
 			files = (
 				2EA012CA26B5F42F00E901E9 /* LaunchScreen.storyboard in Resources */,
 				2EA012C726B5F42F00E901E9 /* Assets.xcassets in Resources */,
+				2EA012F826B60CA900E901E9 /* GoogleService-Info.plist in Resources */,
 				2EA012C526B5F42C00E901E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,13 +333,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37B2E6EBFD4C47F63E4D326A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Safal-SafalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54799E6DD21C505F7CD317C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Safal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A20F2B1944F8ADF3AE2BC30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Safal/Pods-Safal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Safal/Pods-Safal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Safal/Pods-Safal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E1614A0FD0676759FAFAE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E496CB2DCC810D9F2AAF6533 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EA012B626B5F42C00E901E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA012F426B605C600E901E9 /* SignUpViewController.swift in Sources */,
+				2EA012F226B603EA00E901E9 /* BaseViewController.swift in Sources */,
+				2EA012FA26B6146F00E901E9 /* SelectHabitsViewController.swift in Sources */,
+				2EA012EF26B6009B00E901E9 /* UIMethods.swift in Sources */,
 				2EA012C226B5F42C00E901E9 /* ViewController.swift in Sources */,
 				2EA012BE26B5F42C00E901E9 /* AppDelegate.swift in Sources */,
+				2EA012F626B60A5000E901E9 /* HomeViewController.swift in Sources */,
 				2EA012C026B5F42C00E901E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +621,7 @@
 		};
 		2EA012E526B5F42F00E901E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF5B7C93B1A4E47E6D3C4F2 /* Pods-Safal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +641,7 @@
 		};
 		2EA012E626B5F42F00E901E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62608355550F1865689C5D75 /* Pods-Safal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +661,7 @@
 		};
 		2EA012E826B5F42F00E901E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD39A82D7384F68FCAEB08F9 /* Pods-SafalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +684,7 @@
 		};
 		2EA012E926B5F42F00E901E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247749902975B64A8C221DEE /* Pods-SafalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +707,7 @@
 		};
 		2EA012EB26B5F42F00E901E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FC23F9999048A86CA62083 /* Pods-Safal-SafalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +728,7 @@
 		};
 		2EA012EC26B5F42F00E901E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196920D31D808121D30E95E4 /* Pods-Safal-SafalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
