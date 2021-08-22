@@ -2,7 +2,7 @@
 //  SignUpViewController.swift
 //  Safal
 //
-//  Created by Shreya Jhala on 7/31/21.
+//  Created by iCodeSpree on 7/31/21.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var lblError: UILabel!
     
-    let commonUI = UIMethods()
+    let commonUI = UIExtentions()
     
     override func viewDidLoad() {
         super.viewDidLoad()

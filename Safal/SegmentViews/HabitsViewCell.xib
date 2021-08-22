@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HabitsViewCell" customModule="Safal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="858"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xma-YB-bEa">
+                    <rect key="frame" x="0.0" y="0.0" width="507" height="858"/>
+                    <color key="backgroundColor" red="1" green="0.47668260340000002" blue="0.20537194610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xma-YB-bEa" secondAttribute="bottom" id="Cts-6l-frT"/>
+                <constraint firstItem="Xma-YB-bEa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KJn-3h-RWp"/>
+                <constraint firstItem="Xma-YB-bEa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KO2-RZ-wRa"/>
+                <constraint firstItem="Xma-YB-bEa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hJW-AE-k8Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="habitsView" destination="Xma-YB-bEa" id="dDC-Tg-n3e"/>
+            </connections>
+            <point key="canvasLocation" x="70.28985507246378" y="93.080357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

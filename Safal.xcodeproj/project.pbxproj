@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1518E2025022F15F45FE47C0 /* Pods_Safal_SafalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7492B19A776D7605BB93EA9E /* Pods_Safal_SafalUITests.framework */; };
+		2E7812C626D224DF007B9A6E /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812C526D224DF007B9A6E /* HabitsViewController.swift */; };
+		2E7812C826D225D0007B9A6E /* HabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */; };
 		2EA012BE26B5F42C00E901E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */; };
 		2EA012C026B5F42C00E901E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */; };
 		2EA012C226B5F42C00E901E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA012C126B5F42C00E901E9 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		196920D31D808121D30E95E4 /* Pods-Safal-SafalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal-SafalUITests.release.xcconfig"; path = "Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		247749902975B64A8C221DEE /* Pods-SafalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafalTests.release.xcconfig"; path = "Target Support Files/Pods-SafalTests/Pods-SafalTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E7812C526D224DF007B9A6E /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewCell.swift; sourceTree = "<group>"; };
 		2EA012BA26B5F42C00E901E9 /* Safal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E4EFF4926BE3AC80018714C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EA012C826B5F42F00E901E9 /* LaunchScreen.storyboard */,
+				2EA012C326B5F42C00E901E9 /* Main.storyboard */,
+				2EA012C626B5F42F00E901E9 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2EA012B126B5F42C00E901E9 = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				2EA012F026B603CE00E901E9 /* Controllers */,
+				2E4EFF4926BE3AC80018714C /* View */,
 				2EA012ED26B6007200E901E9 /* CommonUI */,
 				2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */,
 				2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */,
-				2EA012C326B5F42C00E901E9 /* Main.storyboard */,
-				2EA012C626B5F42F00E901E9 /* Assets.xcassets */,
-				2EA012C826B5F42F00E901E9 /* LaunchScreen.storyboard */,
 				2EA012CB26B5F42F00E901E9 /* Info.plist */,
 				2EA012F726B60CA900E901E9 /* GoogleService-Info.plist */,
 			);
@@ -173,8 +185,10 @@
 				2EA012F126B603EA00E901E9 /* BaseViewController.swift */,
 				2EA012C126B5F42C00E901E9 /* ViewController.swift */,
 				2EA012F326B605C600E901E9 /* SignUpViewController.swift */,
-				2EA012F526B60A5000E901E9 /* HomeViewController.swift */,
 				2EA012F926B6146F00E901E9 /* SelectHabitsViewController.swift */,
+				2EA012F526B60A5000E901E9 /* HomeViewController.swift */,
+				2E7812C526D224DF007B9A6E /* HabitsViewController.swift */,
+				2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -445,9 +459,11 @@
 				2EA012F226B603EA00E901E9 /* BaseViewController.swift in Sources */,
 				2EA012FA26B6146F00E901E9 /* SelectHabitsViewController.swift in Sources */,
 				2EA012EF26B6009B00E901E9 /* UIMethods.swift in Sources */,
+				2E7812C826D225D0007B9A6E /* HabitsTableViewCell.swift in Sources */,
 				2EA012C226B5F42C00E901E9 /* ViewController.swift in Sources */,
 				2EA012BE26B5F42C00E901E9 /* AppDelegate.swift in Sources */,
 				2EA012F626B60A5000E901E9 /* HomeViewController.swift in Sources */,
+				2E7812C626D224DF007B9A6E /* HabitsViewController.swift in Sources */,
 				2EA012C026B5F42C00E901E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
