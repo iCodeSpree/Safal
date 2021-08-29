@@ -11,11 +11,7 @@ class HabitsViewController: BaseViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tblView: UITableView!
     
-    private var cellArr: [HabitsItem] = [HabitsItem(title: "Wake up at 5am"),
-                                            HabitsItem(title: "Exercise"),
-                                            HabitsItem(title: "Meditate"),
-                                            HabitsItem(title: "Journal"),
-                                            HabitsItem(title: "Eat greens")]
+    private var cellArr = [HabitsItem]()
     private var selectedData = [NSMutableDictionary]()
     
     override func viewDidLoad() {
