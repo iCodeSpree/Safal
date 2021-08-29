@@ -19,6 +19,10 @@ class BaseViewController: UIViewController {
         viewController.modalPresentationStyle = .fullScreen
         present(viewController, animated: true, completion: nil)
     }
+    
+    func presentAlertViewController(title: String, message: String) -> UIAlertController {
+        return UIAlertController(title: title, message: message, preferredStyle: .alert)
+    }
 
 }
 
