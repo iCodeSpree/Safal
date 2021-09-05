@@ -12,10 +12,9 @@ class HabitsViewController: BaseViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var lblPercentage: UILabel!
     @IBOutlet weak var progView: UIProgressView!
+    @IBOutlet weak var btnAddTask: UIButton!
     
     var cellArr = [HabitsItem]()
-    private var selectedData = [NSMutableDictionary]()
-    var counter: Int = 0
     
     override func loadView() {
         super.loadView()
@@ -24,7 +23,7 @@ class HabitsViewController: BaseViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        progView.progress = 0.0
+        progView.progress = 0
         
         tblView.delegate = self
         tblView.dataSource = self
@@ -67,7 +66,6 @@ class HabitsViewController: BaseViewController, UITableViewDataSource, UITableVi
         let index = cellArr.count
         cellArr.append(HabitsItem(title: title))
         tblView.insertRows(at: [IndexPath(row: index, section: 0)], with: .top)
-        counter += 1
     }
     
     func markDone(state: Bool, index: Int?) {
@@ -90,8 +88,11 @@ extension HabitsViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HabitsTableViewCell", for: indexPath) as! HabitsTableViewCell
         if indexPath.row < cellArr.count {
             let item = cellArr[indexPath.row]
-            let countUnit = Float(100 / cellArr.count)
-            let progValue = countUnit > 0.0 ? (countUnit/100) : 0.0
+            let cellCount = Float(cellArr.count)
+            let countUnit = Float(1/cellCount)
+            let progValue = countUnit >= 0.1 ? countUnit : 0
+            
+            btnAddTask.isEnabled = cellCount == 10 ? false : true
             
             cell.delegate = self
             cell.habit = cellArr
@@ -100,19 +101,19 @@ extension HabitsViewController {
             cell.lblHabit.text = item.title
             if cellArr[indexPath.row].done {
                 cell.btnTaskDone.setImage(UIImage(named: "taskDoneIcon.png"), for: .normal)
-                progView.progress += progValue
-                lblPercentage.text = "\(round(progView.progress * 100))%"
+                progView.progress += Float(progValue)
+                lblPercentage.text = progView.progress == 1.0 ? "100%" : "\(round(progView.progress * 100))%"
             } else {
                 cell.btnTaskDone.setImage(UIImage(named: "taskToBeDoneIcon.png"), for: .normal)
-                progView.progress -= progValue
-                lblPercentage.text = "\(round(progView.progress * 100))%"
+                progView.progress -= Float(progValue)
+                lblPercentage.text = progView.progress == 0 ? "0%" : "\(round(progView.progress * 100))%"
             }
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tblView.deselectRow(at: indexPath, animated: true)
+        tblView.deselectRow(at: indexPath, animated: false)
         if indexPath.row < cellArr.count {
             tblView.reloadRows(at: [indexPath], with: .automatic)
         }
@@ -122,6 +123,7 @@ extension HabitsViewController {
         if indexPath.row < cellArr.count {
             cellArr.remove(at: indexPath.row)
             tblView.deleteRows(at: [indexPath], with: .top)
+            btnAddTask.isEnabled = cellArr.count == 10 ? false : true
         }
     }
     

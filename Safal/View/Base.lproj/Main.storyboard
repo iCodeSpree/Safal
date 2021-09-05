@@ -624,6 +624,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnAddTask" destination="AP9-nC-0hY" id="gT2-pK-uF7"/>
                         <outlet property="lblPercentage" destination="Ovm-8H-3e8" id="cQe-Zc-mGK"/>
                         <outlet property="progView" destination="kgU-Tz-Tml" id="C7g-cN-c1f"/>
                         <outlet property="tblView" destination="MzE-Sn-ekl" id="1bU-gg-apV"/>

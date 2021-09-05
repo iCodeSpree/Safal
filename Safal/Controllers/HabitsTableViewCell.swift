@@ -31,15 +31,6 @@ class HabitsTableViewCell: UITableViewCell {
         } else {
             delegate?.markDone(state: true, index: index)
         }
-        
-        /* if didTap {
-         didTap = false
-         btnTaskDone.setImage(UIImage(named: "taskToBeDoneIcon.png"), for: .normal)
-     } else {
-         didTap = true
-         btnTaskDone.setImage(UIImage(named: "taskDoneIcon.png"), for: .normal)
-     } */
-        
     }
     
 }
