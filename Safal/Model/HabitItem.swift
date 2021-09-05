@@ -9,12 +9,11 @@ import UIKit
 
 class HabitsItem: NSObject, NSCoding {
     
-    var title: String
-    var done: UIImage
+    var title: String = ""
+    var done: Bool = false
     
     public init(title: String) {
         self.title = title
-        self.done = #imageLiteral(resourceName: "taskToBeDoneIcon")
     }
     
     func encode(with coder: NSCoder) {
@@ -30,7 +29,7 @@ class HabitsItem: NSObject, NSCoding {
         }
         
         if coder.containsValue(forKey: "done") {
-            self.done = coder.decodeObject(forKey: "done") as! UIImage
+            //self.done = coder.decodeObject(forKey: "done")
         } else {
             return nil
         }

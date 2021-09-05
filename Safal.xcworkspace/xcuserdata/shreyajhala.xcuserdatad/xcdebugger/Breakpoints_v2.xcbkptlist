@@ -55,16 +55,140 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FA9A5C47-69A4-4479-92DF-37BD688CA746"
-            shouldBeEnabled = "Yes"
+            uuid = "45762840-CABF-4273-A804-072D3C760B92"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Safal/Controllers/HabitsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "addNewHabit(title:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Safal/Controllers/HabitsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "HabitsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - aaeef5a7d1d82ea9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.cellArr.getter : Swift.Array&lt;Safal.HabitsItem&gt;"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - ede184181b261aa5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.cellArr.setter : Swift.Array&lt;Safal.HabitsItem&gt;"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - 7d27296d060ac1a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.cellArr.modify : Swift.Array&lt;Safal.HabitsItem&gt;"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - db4d89a9644788ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.cellArr.modify : Swift.Array&lt;Safal.HabitsItem&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - fe39be3f86ad44a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Safal.HabitsViewController"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "415">
+               </Location>
+               <Location
+                  uuid = "432DD643-2C24-4D6B-A8DB-49DD15A3EA45 - c6d1c492e9024f01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Safal.HabitsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Safal.HabitsViewController&gt;"
+                  moduleName = "Safal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shreyajhala/Desktop/New/Safal/Safal/Controllers/HabitsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "359">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2217EFA-ED1B-453F-9C63-646B84161C59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Safal/Controllers/HabitsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

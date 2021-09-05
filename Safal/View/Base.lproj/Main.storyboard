@@ -563,7 +563,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oog-WL-I5i">
                                         <rect key="frame" x="4" y="0.0" width="390" height="33"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovm-8H-3e8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovm-8H-3e8">
                                                 <rect key="frame" x="0.0" y="0.0" width="349" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="349" id="6Ys-La-2fK"/>
@@ -590,28 +590,27 @@
                                             <constraint firstAttribute="width" constant="390" id="bFH-ID-RAM"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgF-L2-Q6o">
-                                        <rect key="frame" x="0.0" y="41" width="398" height="9"/>
-                                        <color key="backgroundColor" red="1" green="0.47668260340000002" blue="0.20537194610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-Tz-Tml">
+                                        <rect key="frame" x="0.0" y="52" width="398" height="4"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.2784313725" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="0.47668260340000002" blue="0.20537194610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="398" id="RyY-3o-lB7"/>
-                                            <constraint firstAttribute="height" constant="9" id="sNp-2U-6ly"/>
+                                            <constraint firstAttribute="width" constant="398" id="4HZ-mq-soo"/>
+                                            <constraint firstAttribute="height" constant="4" id="C01-C8-NoO"/>
                                         </constraints>
-                                    </view>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1176470588" green="0.2784313725" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="MzE-Sn-ekl" secondAttribute="bottom" id="4ZX-a3-FTy"/>
                                     <constraint firstAttribute="trailing" secondItem="Oog-WL-I5i" secondAttribute="trailing" constant="4" id="7J3-vq-WJv"/>
                                     <constraint firstItem="Oog-WL-I5i" firstAttribute="leading" secondItem="tIT-i4-onx" secondAttribute="leading" constant="4" id="K07-lQ-iKt"/>
-                                    <constraint firstAttribute="bottom" secondItem="rgF-L2-Q6o" secondAttribute="bottom" constant="580" id="TC4-sN-Rnl"/>
                                     <constraint firstItem="Oog-WL-I5i" firstAttribute="centerX" secondItem="tIT-i4-onx" secondAttribute="centerX" id="ffg-Ml-Got"/>
                                     <constraint firstItem="Oog-WL-I5i" firstAttribute="top" secondItem="tIT-i4-onx" secondAttribute="top" id="jMI-u0-dPM"/>
                                     <constraint firstAttribute="trailing" secondItem="MzE-Sn-ekl" secondAttribute="trailing" id="m7E-Sl-nYK"/>
-                                    <constraint firstItem="rgF-L2-Q6o" firstAttribute="leading" secondItem="tIT-i4-onx" secondAttribute="leading" id="t85-X6-8kN"/>
-                                    <constraint firstItem="rgF-L2-Q6o" firstAttribute="top" secondItem="Oog-WL-I5i" secondAttribute="bottom" constant="8" id="udl-pI-Zqo"/>
+                                    <constraint firstItem="kgU-Tz-Tml" firstAttribute="top" secondItem="Oog-WL-I5i" secondAttribute="bottom" constant="19" id="oLb-g3-Vir"/>
                                     <constraint firstItem="MzE-Sn-ekl" firstAttribute="leading" secondItem="tIT-i4-onx" secondAttribute="leading" id="vev-Dy-TGl"/>
-                                    <constraint firstAttribute="trailing" secondItem="rgF-L2-Q6o" secondAttribute="trailing" id="wxj-f2-sKi"/>
+                                    <constraint firstItem="kgU-Tz-Tml" firstAttribute="centerX" secondItem="tIT-i4-onx" secondAttribute="centerX" id="zQs-UK-jhy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -625,6 +624,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblPercentage" destination="Ovm-8H-3e8" id="cQe-Zc-mGK"/>
+                        <outlet property="progView" destination="kgU-Tz-Tml" id="C7g-cN-c1f"/>
                         <outlet property="tblView" destination="MzE-Sn-ekl" id="1bU-gg-apV"/>
                     </connections>
                 </viewController>
