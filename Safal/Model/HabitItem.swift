@@ -29,7 +29,7 @@ class HabitsItem: NSObject, NSCoding {
         }
         
         if coder.containsValue(forKey: "done") {
-            //self.done = coder.decodeObject(forKey: "done")
+            self.done = coder.decodeBool(forKey: "done")
         } else {
             return nil
         }
@@ -57,10 +57,11 @@ extension Collection where Iterator.Element == HabitsItem {
     
     func writeToPersistance() throws {
         if let url = Self.persistencePath(), let array = self as? NSArray {
+            print("url: \(url)")
             let data = try? NSKeyedArchiver.archivedData(withRootObject: array, requiringSecureCoding: true)
             try data?.write(to: url)
         } else {
-            throw NSError(domain: "com.example.Safal", code: 10, userInfo: nil)
+            throw NSError(domain: "com.shreyazala.Safal", code: 10, userInfo: nil)
         }
     }
     
@@ -69,10 +70,10 @@ extension Collection where Iterator.Element == HabitsItem {
             if let array = NSKeyedUnarchiver.unarchiveObject(with: data) as? [HabitsItem] {
                 return array
             } else {
-                throw NSError(domain: "com.example.Safal", code: 11, userInfo: nil)
+                throw NSError(domain: "com.shreyazala.Safal", code: 11, userInfo: nil)
             }
         } else {
-            throw NSError(domain: "com.example.Safal", code: 12, userInfo: nil)
+            throw NSError(domain: "com.shreyazala.Safal", code: 12, userInfo: nil)
         }
     }
 }

@@ -1,3 +1,3 @@
 # Safal
 
-A To-Dolist App
+An app that helps you develop habits.

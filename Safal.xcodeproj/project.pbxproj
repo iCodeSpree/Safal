@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1518E2025022F15F45FE47C0 /* Pods_Safal_SafalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7492B19A776D7605BB93EA9E /* Pods_Safal_SafalUITests.framework */; };
+		2E087F8D26E9CDC5003540C5 /* StreakCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E087F8C26E9CDC5003540C5 /* StreakCollectionViewCell.swift */; };
+		2E087F9026EA5349003540C5 /* CalendarMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E087F8F26EA5349003540C5 /* CalendarMethods.swift */; };
+		2E20107926E5888B00F0810D /* HabitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E20107826E5888A00F0810D /* HabitStore.swift */; };
+		2E20107B26E588A200F0810D /* HabitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E20107A26E588A200F0810D /* HabitUtility.swift */; };
+		2E20107D26E6854400F0810D /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E20107C26E6854400F0810D /* StreakViewController.swift */; };
 		2E567B4226D9330A008BF937 /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E567B4126D93309008BF937 /* HabitItem.swift */; };
 		2E7812C626D224DF007B9A6E /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812C526D224DF007B9A6E /* HabitsViewController.swift */; };
 		2E7812C826D225D0007B9A6E /* HabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */; };
@@ -48,6 +53,11 @@
 /* Begin PBXFileReference section */
 		196920D31D808121D30E95E4 /* Pods-Safal-SafalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safal-SafalUITests.release.xcconfig"; path = "Target Support Files/Pods-Safal-SafalUITests/Pods-Safal-SafalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		247749902975B64A8C221DEE /* Pods-SafalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafalTests.release.xcconfig"; path = "Target Support Files/Pods-SafalTests/Pods-SafalTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E087F8C26E9CDC5003540C5 /* StreakCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E087F8F26EA5349003540C5 /* CalendarMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethods.swift; sourceTree = "<group>"; };
+		2E20107826E5888A00F0810D /* HabitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStore.swift; sourceTree = "<group>"; };
+		2E20107A26E588A200F0810D /* HabitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitUtility.swift; sourceTree = "<group>"; };
+		2E20107C26E6854400F0810D /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
 		2E567B4126D93309008BF937 /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		2E7812C526D224DF007B9A6E /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
 		2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,12 +117,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E087F8E26E9CDE5003540C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */,
+				2E087F8C26E9CDC5003540C5 /* StreakCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2E20101826D9FF3800F0810D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2E567B4126D93309008BF937 /* HabitItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2E20107726E5886C00F0810D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E20107826E5888A00F0810D /* HabitStore.swift */,
+				2E20107A26E588A200F0810D /* HabitUtility.swift */,
+				2E087F8F26EA5349003540C5 /* CalendarMethods.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2E4EFF4926BE3AC80018714C /* View */ = {
@@ -153,7 +182,9 @@
 				2E20101826D9FF3800F0810D /* Model */,
 				2E4EFF4926BE3AC80018714C /* View */,
 				2EA012F026B603CE00E901E9 /* Controllers */,
+				2E087F8E26E9CDE5003540C5 /* Cells */,
 				2EA012ED26B6007200E901E9 /* CommonUI */,
+				2E20107726E5886C00F0810D /* Helpers */,
 				2EA012BD26B5F42C00E901E9 /* AppDelegate.swift */,
 				2EA012BF26B5F42C00E901E9 /* SceneDelegate.swift */,
 				2EA012CB26B5F42F00E901E9 /* Info.plist */,
@@ -196,7 +227,7 @@
 				2EA012F326B605C600E901E9 /* SignUpViewController.swift */,
 				2EA012F526B60A5000E901E9 /* HomeViewController.swift */,
 				2E7812C526D224DF007B9A6E /* HabitsViewController.swift */,
-				2E7812C726D225D0007B9A6E /* HabitsTableViewCell.swift */,
+				2E20107C26E6854400F0810D /* StreakViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -463,15 +494,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E20107D26E6854400F0810D /* StreakViewController.swift in Sources */,
 				2EA012F426B605C600E901E9 /* SignUpViewController.swift in Sources */,
+				2E20107B26E588A200F0810D /* HabitUtility.swift in Sources */,
 				2EA012F226B603EA00E901E9 /* BaseViewController.swift in Sources */,
+				2E087F8D26E9CDC5003540C5 /* StreakCollectionViewCell.swift in Sources */,
 				2EA012EF26B6009B00E901E9 /* UIMethods.swift in Sources */,
 				2E7812C826D225D0007B9A6E /* HabitsTableViewCell.swift in Sources */,
 				2EA012C226B5F42C00E901E9 /* ViewController.swift in Sources */,
 				2EA012BE26B5F42C00E901E9 /* AppDelegate.swift in Sources */,
+				2E087F9026EA5349003540C5 /* CalendarMethods.swift in Sources */,
 				2EA012F626B60A5000E901E9 /* HomeViewController.swift in Sources */,
 				2E567B4226D9330A008BF937 /* HabitItem.swift in Sources */,
 				2E7812C626D224DF007B9A6E /* HabitsViewController.swift in Sources */,
+				2E20107926E5888B00F0810D /* HabitStore.swift in Sources */,
 				2EA012C026B5F42C00E901E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
